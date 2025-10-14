@@ -1,12 +1,15 @@
 #include <stdio.h>
+#include "andrew.c"
 
 int seletor(int a);
 
-int main(){
+int main()
+{
   seletor(0);
 }
 
-int seletor(int a){
+int seletor(int a)
+{
   printf("0 - Sair\n");
   printf("1 - Criptografar\n");
   printf("2 - Descriptografar\n");
@@ -26,15 +29,15 @@ int seletor(int a){
     printf("Escolha uma opção: ");
     scanf("%d", &a);
     switch (a){
-      case 0:
-        printf("Saindo...\n");
-        break;
-      case 1:
-        printf("Cifra de Cesar\n");
-        break;
+    case 0:
+      printf("Saindo...\n");
+      break;
+    case 1:
+      printf("Cifra de Cesar\n");
+      break;
     case 2:
-        printf("Rafael\n");
-        break;
+      printf("Rafael\n");
+      break;
     case 3:
       printf("Andrew\n");
       break;
@@ -42,6 +45,7 @@ int seletor(int a){
       printf("Opção inválida\n");
       break;
     }
+    break;
   case 2:
     printf("DESCRIPTOGRAFIA:\n");
     printf("0 - Sair\n");
@@ -51,15 +55,15 @@ int seletor(int a){
     printf("Escolha uma opção: ");
     scanf("%d", &a);
     switch (a){
-      case 0:
-        printf("Saindo...\n");
-        break;
-      case 1:
-        printf("Cifra de Cesar\n");
-        break;
+    case 0:
+      printf("Saindo...\n");
+      break;
+    case 1:
+      printf("Cifra de Cesar\n");
+      break;
     case 2:
-        printf("Rafael\n");
-        break;
+      printf("Rafael\n");
+      break;
     case 3:
       printf("Andrew\n");
       break;
@@ -67,6 +71,7 @@ int seletor(int a){
       printf("Opção inválida\n");
       break;
     }
+    break;
   default:
     break;
   }
