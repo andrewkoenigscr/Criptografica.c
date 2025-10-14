@@ -39,7 +39,7 @@ int seletor(int a)
       printf("Rafael\n");
       break;
     case 3:
-      printf("Andrew\n");
+      criptografia_andrew();
       break;
     default:
       printf("Opção inválida\n");
