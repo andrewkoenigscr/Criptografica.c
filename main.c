@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "andrew.c"
+#include "transposicao.c"
 
 int seletor(int a);
 
@@ -39,7 +39,7 @@ int seletor(int a)
       printf("Rafael\n");
       break;
     case 3:
-      criptografia_andrew();
+      cripto_trans();
       break;
     default:
       printf("Opção inválida\n");

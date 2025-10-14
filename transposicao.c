@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-void criptografia_andrew(){
+void cripto_trans(){
   printf("Criptografia Andrew\n");
 }
 
-void descriptografia_andrew(){
+void descripto_trans(){
   printf("Descriptografia Andrew\n");
 }
