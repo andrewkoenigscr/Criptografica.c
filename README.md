@@ -20,8 +20,3 @@ O programa permite ao usuário escolher entre três métodos de criptografia:
 3. **Cifra de Transposição**
    - Reorganiza as letras da mensagem com base em uma chave de ordem.
    - Troca a posição dos caracteres sem alterar seus valores.
-
----
-
-## ⚙️ Estrutura do Projeto
-
