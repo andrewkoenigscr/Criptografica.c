@@ -10,6 +10,7 @@ int main()
 
 int seletor(int a)
 {
+  printf("CRIPTOGRAFICA.C\n");
   printf("0 - Sair\n");
   printf("1 - Criptografar\n");
   printf("2 - Descriptografar\n");
@@ -25,7 +26,7 @@ int seletor(int a)
     printf("0 - Sair\n");
     printf("1 - Cifra de Cesar\n");
     printf("2 - Rafael\n");
-    printf("3 - Andrew\n");
+    printf("3 - Cifra de Transposição\n");
     printf("Escolha uma opção: ");
     scanf("%d", &a);
     switch (a){
@@ -51,7 +52,7 @@ int seletor(int a)
     printf("0 - Sair\n");
     printf("1 - Cifra de Cesar\n");
     printf("2 - Rafael\n");
-    printf("3 - Andrew\n");
+    printf("3 - Cifra de Transposição\n");
     printf("Escolha uma opção: ");
     scanf("%d", &a);
     switch (a){
@@ -65,7 +66,7 @@ int seletor(int a)
       printf("Rafael\n");
       break;
     case 3:
-      printf("Andrew\n");
+      descripto_trans();
       break;
     default:
       printf("Opção inválida\n");
