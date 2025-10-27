@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 // Função para criptografar o texto usando a cifra de César
-void criptografar(char texto[], int chave) {
+void criptografia_cesar(char texto[], int chave) {
     for (int i = 0; texto[i] != '\0'; i++) {
         char c = texto[i];
 
@@ -17,7 +17,7 @@ void criptografar(char texto[], int chave) {
 }
 
 // Função para descriptografar o texto
-void descriptografar(char texto[], int chave) {
+void descriptografia_cesar(char texto[], int chave) {
     for (int i = 0; texto[i] != '\0'; i++) {
         char c = texto[i];
 
@@ -30,14 +30,14 @@ void descriptografar(char texto[], int chave) {
     }
 }
 
-int main() {
+int cifra_de_cesar() {
     char texto[256];
     int chave, opcao;
 
-    printf("===== Cifra de César =====\n");
-    printf("1 - Criptografar\n");
+    printf("\n===== Cifra de César =====\n");
+    printf("\n1 - Criptografar\n");
     printf("2 - Descriptografar\n");
-    printf("Escolha uma opcao: ");
+    printf("\nEscolha uma opção: ");
     scanf("%d", &opcao);
     getchar(); // limpa o buffer
 
@@ -49,13 +49,14 @@ int main() {
     scanf("%d", &chave);
 
     if (opcao == 1) {
-        criptografar(texto, chave);
+        criptografia_cesar(texto, chave);
         printf("\nTexto criptografado: %s\n", texto);
     } else if (opcao == 2) {
-        descriptografar(texto, chave);
+        descriptografia_cesar(texto, chave);
         printf("\nTexto descriptografado: %s\n", texto);
     } else {
-        printf("Opcao invalida.\n");
+        printf("Comando não reconhecido.\n");
+        cifra_de_cesar();
     }
 
     return 0;

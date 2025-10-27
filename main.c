@@ -1,79 +1,38 @@
 #include <stdio.h>
-#include "transposicao.c"
+#include "cifra_de_cesar.h"
+#include "cifra_de_transposicao.h"
+//#include "rafael.c"
 
-int seletor(int a);
 
-int main()
-{
-  seletor(0);
+void seletor(){
+  int a;
+  printf("\nCRIPTOGRAFA.C\n");
+  printf("\n0 - Sair\n1 - Cifra de Cesar\n2 - Transposição\n3 - Chave e Cadeado\n");
+  printf("\nComando: ");
+  scanf("%d", &a);
+  switch (a){
+    case 0:
+      printf("Saindo...");
+      break;
+    
+    case 1:
+      cifra_de_cesar();
+      break;
+    
+    case 2:
+      cifra_de_transposicao();
+      break;
+    
+    case 3:
+      break;
+    
+    default:
+      printf("Comando não reconhecido. Voltando a tela inicial\n");
+      seletor();
+      break;
+  }
 }
 
-int seletor(int a)
-{
-  printf("CRIPTOGRAFICA.C\n");
-  printf("0 - Sair\n");
-  printf("1 - Criptografar\n");
-  printf("2 - Descriptografar\n");
-  printf("Escolha uma opção: ");
-  scanf("%d", &a);
-
-  switch (a){
-  case 0:
-    printf("Saindo...\n");
-    break;
-  case 1:
-    printf("CRIPTOGRAFIA:\n");
-    printf("0 - Sair\n");
-    printf("1 - Cifra de Cesar\n");
-    printf("2 - Rafael\n");
-    printf("3 - Cifra de Transposição\n");
-    printf("Escolha uma opção: ");
-    scanf("%d", &a);
-    switch (a){
-    case 0:
-      printf("Saindo...\n");
-      break;
-    case 1:
-      printf("Cifra de Cesar\n");
-      break;
-    case 2:
-      printf("Rafael\n");
-      break;
-    case 3:
-      cripto_trans();
-      break;
-    default:
-      printf("Opção inválida\n");
-      break;
-    }
-    break;
-  case 2:
-    printf("DESCRIPTOGRAFIA:\n");
-    printf("0 - Sair\n");
-    printf("1 - Cifra de Cesar\n");
-    printf("2 - Rafael\n");
-    printf("3 - Cifra de Transposição\n");
-    printf("Escolha uma opção: ");
-    scanf("%d", &a);
-    switch (a){
-    case 0:
-      printf("Saindo...\n");
-      break;
-    case 1:
-      printf("Cifra de Cesar\n");
-      break;
-    case 2:
-      printf("Rafael\n");
-      break;
-    case 3:
-      descripto_trans();
-      break;
-    default:
-      printf("Opção inválida\n");
-      break;
-    }
-    break;
-  default:
-    break;
-  }
+int main(){
+  seletor();
 }
