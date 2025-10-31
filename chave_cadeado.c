@@ -327,7 +327,3 @@ void menuCvCd()
 		}
 	} while (selector != 3);
 }
-
-int main(){
-	menuCvCd();
-}
