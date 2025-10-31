@@ -14,6 +14,7 @@ typedef struct chaveiro {
 
 // Protótipos das funções
 void limpeza();
+void verificar_SO();
 void functionChave(char chave[53][2], char name[20]);
 void codificador(char cadeado[53][2]);
 void decodificador(char cadeado[53][2]);
