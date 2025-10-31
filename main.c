@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "cifra_de_cesar.h"
 #include "cifra_de_transposicao.h"
-//#include "rafael.c"
+#include "chave_cadeado.h"
 
 
 void seletor(){
@@ -24,6 +24,7 @@ void seletor(){
       break;
     
     case 3:
+      menuCvCd();
       break;
     
     default:
